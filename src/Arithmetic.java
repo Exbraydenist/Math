@@ -1,23 +1,13 @@
 import java.util.Scanner;
 
 public class Arithmetic {
-    static Scanner scanner = new Scanner(System.in);
-    static int a;
-    static int b;
-    public static void main(String[] args) {
-        System.out.print("Введите число a: ");
-        a = scanner.nextInt();
-        System.out.print("\n");
-        System.out.print("Введите число b: ");
-        b = scanner.nextInt();
-        Arithmetic function = new Arithmetic(a, b);
-        function.summarize(a, b);
-        function.multiply(a, b);
-        function.findMinMax(a, b);
-    }
+
+    private int a;
+    private int b;
+
     Arithmetic(int x, int y) {
-        a = x;
-        b = y;
+        this.a = x;
+        this.b = y;
     }
     public void summarize(int a, int b) {
         int operationValue = a + b;
